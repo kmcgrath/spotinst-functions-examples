@@ -72,3 +72,7 @@ Upload the JAR with the following settings:
       RDS_USERNAME: <USERNAME>
       RDS_PASSWORD: <PASSWORD>
 
+4. Execute
+```
+> curl -X POST -d '{"id": 111, "name": "Employee 111"}' <TRIGGER_URL>
+```
