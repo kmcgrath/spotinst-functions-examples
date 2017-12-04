@@ -58,3 +58,17 @@ or with Docker
 ```
 
 The JAR is now located in the `target` directory within this project
+
+3. Create the Function
+
+Upload the JAR with the following settings:
+
+    Memory: 256mb
+    Handler: org.sample.serverless.spotinst.rds.EmployeeHandler
+    Timeout: 30s
+    Environment:
+      RDS_HOSTNAME: <HOSTNAME>
+      RDS_DB_NAME: <DB_NAME>
+      RDS_USERNAME: <USERNAME>
+      RDS_PASSWORD: <PASSWORD>
+
